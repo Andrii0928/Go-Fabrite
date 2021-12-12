@@ -1,0 +1,15 @@
+name: "elasticsearch-fluentd-kibana"
+generator: "static"
+path: "./manifests"
+subcomponents:
+  - name: "grafana"
+    generator: "helm"
+    source: "https://github.com/helm/charts"
+    method: "git"
+    path: "stable/grafana"
+    repositories:
+      incubator: "https://kubernetes-charts-incubator.storage.googleapis.com/"
+  - name: "prometheus"
+    type: "helm"
+    method: "local"
+    path: "../local-charts/prometheus"

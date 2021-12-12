@@ -1,0 +1,11 @@
+{
+    "name": "infra",
+    "type": "component",
+    "subcomponents": [
+        {
+            "name": "efk",
+            "method": "git",
+            "source": "https://github.com/microsoft/fabrikate-elasticsearch-fluentd-kibana"
+        }
+    ]
+}

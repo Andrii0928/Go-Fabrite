@@ -1,0 +1,10 @@
+{
+    "name": "infra",
+    "subcomponents": [
+        {
+            "name": "fabrikate-jaeger",
+            "type": "component",
+            "source": "./fabrikate-jaeger"
+        }
+    ]
+}

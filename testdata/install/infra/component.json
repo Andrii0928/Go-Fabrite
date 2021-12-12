@@ -1,0 +1,19 @@
+{
+    "name": "infra",
+    "subcomponents": [
+        {
+            "name": "efk",
+            "method": "git",
+            "source": "https://github.com/timfpark/fabrikate-elasticsearch-fluentd-kibana",
+            "branch": "master"
+        },
+        {
+            "name": "elasticsearch",
+            "generator": "helm",
+            "source": "https://github.com/helm/charts",
+            "method": "git",
+            "path": "stable/elasticsearch",
+            "version": "b23ce6af309bfe25d4d485e85b66ce63475070d7"
+        }
+    ]
+}
